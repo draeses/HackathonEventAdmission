@@ -1,0 +1,11 @@
+﻿<Application x:Class="LiveCameraSample.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LiveCameraSample"
+             xmlns:props="clr-namespace:LiveCameraSample.Properties"
+             Exit="Application_Exit"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <props:Settings x:Key="Settings" FaceAPIHost="https://westeurope.api.cognitive.microsoft.com/face/v1.0" EmotionAPIHost="https://westeurope.api.cognitive.microsoft.com/emotion/v1.0" VisionAPIHost="https://westeurope.api.cognitive.microsoft.com/vision/v1.0" />
+    </Application.Resources>
+</Application>
