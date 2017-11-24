@@ -67,6 +67,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIKeys.cs" />
     <Compile Include="ConcurrentLogger.cs" />
     <Compile Include="FrameGrabber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
