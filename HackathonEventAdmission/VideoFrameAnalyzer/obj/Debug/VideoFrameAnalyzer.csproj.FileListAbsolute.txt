@@ -22,3 +22,27 @@ C:\Users\dvanhee\Documents\Visual Studio 2015\Projects\VideoFrameAnalysis\VideoF
 C:\Users\dvanhee\Documents\Visual Studio 2015\Projects\VideoFrameAnalysis\VideoFrameAnalyzer\obj\Debug\VideoFrameAnalyzer.csprojResolveAssemblyReference.cache
 C:\Users\dvanhee\Documents\Visual Studio 2015\Projects\VideoFrameAnalysis\VideoFrameAnalyzer\obj\Debug\VideoFrameAnalyzer.dll
 C:\Users\dvanhee\Documents\Visual Studio 2015\Projects\VideoFrameAnalysis\VideoFrameAnalyzer\obj\Debug\VideoFrameAnalyzer.pdb
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x86\msvcp120.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x86\msvcr120.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x86\opencv_world310.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x86\opencv_ffmpeg310.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x64\msvcp120.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x64\msvcr120.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x64\opencv_world310.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\dll\x64\opencv_ffmpeg310_64.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\VideoFrameAnalyzer.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\VideoFrameAnalyzer.pdb
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.xml
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\obj\Debug\VideoFrameAnalyzer.csprojResolveAssemblyReference.cache
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\obj\Debug\VideoFrameAnalyzer.dll
+C:\Users\dvanhee\Source\Repos\HackathonEventAdmission\HackathonEventAdmission\VideoFrameAnalyzer\obj\Debug\VideoFrameAnalyzer.pdb

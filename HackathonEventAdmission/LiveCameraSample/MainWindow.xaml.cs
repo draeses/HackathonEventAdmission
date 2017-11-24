@@ -58,7 +58,7 @@ namespace LiveCameraSample
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
-        private FaceServiceClient _faceClient = null;
+        private FaceServiceClient fsc = null;
         private readonly FrameGrabber<LiveCameraResult> _grabber = null;
         private static readonly ImageEncodingParam[] s_jpegParams = {
             new ImageEncodingParam(ImwriteFlags.JpegQuality, 60)
@@ -145,7 +145,7 @@ namespace LiveCameraSample
             // Submit image to API. 
             var attrs = new List<FaceAttributeType> { FaceAttributeType.Age,
                 FaceAttributeType.Gender, FaceAttributeType.HeadPose };
-            var faces = await _faceClient.DetectAsync(jpg, returnFaceAttributes: attrs);
+            var faces = await fsc.DetectAsync(jpg, returnFaceAttributes: attrs);
             // Count the API call. 
             Properties.Settings.Default.FaceAPICallCount++;
             // Output. 
@@ -159,7 +159,7 @@ namespace LiveCameraSample
             var jpg = frame.Image.ToMemoryStream(".jpg", s_jpegParams);
             var attrs = new List<FaceAttributeType> { FaceAttributeType.Age };
             //await WaitCallLimitPerSecondAsync();
-            var faces = await _faceClient.DetectAsync(jpg, returnFaceAttributes: attrs);
+            var faces = await fsc.DetectAsync(jpg, returnFaceAttributes: attrs);
             Properties.Settings.Default.FaceAPICallCount++;
             // Count the API call. 
             var faceIDs = faces.Select(x => x.FaceId).ToArray();
@@ -168,7 +168,7 @@ namespace LiveCameraSample
             {
                 return new LiveCameraResult();
             }
-            var personList = await _faceClient.IdentifyAsync(personGroupID, faceIDs);
+            var personList = await fsc.IdentifyAsync(personGroupID, faceIDs);
             Properties.Settings.Default.FaceAPICallCount++;
             string[] celebNames = new string[0];
             if (personList != null && personList[0] != null)
@@ -178,7 +178,7 @@ namespace LiveCameraSample
                 {
                     if (personList[i].Candidates.Length > 0)
                     {
-                        var result = personsInGroup.FindByID(personList[i].Candidates[0].PersonId);
+                        var result = await fsc.GetPersonAsync(personGroupID, personList[i].Candidates[0].PersonId);
                         celebNames[i] = result.Name;
                         persons.Add(result);
                     }
@@ -281,14 +281,11 @@ namespace LiveCameraSample
                 return;
             }
 
-            // Clean leading/trailing spaces in API keys. 
-            Properties.Settings.Default.FaceAPIKey = Properties.Settings.Default.FaceAPIKey.Trim();
-
             // Create API clients. 
-            _faceClient = new FaceServiceClient(Properties.Settings.Default.FaceAPIKey, Properties.Settings.Default.FaceAPIHost);
+            fsc = new FaceServiceClient(APIKeys.GetSubscriptionKey(), APIKeys.GetAPIURL());
 
             // How often to analyze. 
-            _grabber.TriggerAnalysisOnInterval(Properties.Settings.Default.AnalysisInterval);
+            _grabber.TriggerAnalysisOnInterval(TimeSpan.FromSeconds(5));
 
             // Reset message. 
             MessageArea.Text = "";
@@ -296,10 +293,7 @@ namespace LiveCameraSample
             // Record start time, for auto-stop
             _startTime = DateTime.Now;
 
-            personGroupID = Properties.Settings.Default.PersonGroupID.Trim();
-
-            var persons = await _faceClient.ListPersonsAsync(personGroupID);
-            personsInGroup = persons.ToList();
+            personGroupID = APIKeys.getPersonGroupID();
 
             await _grabber.StartProcessingCameraAsync(CameraList.SelectedIndex);
         }
